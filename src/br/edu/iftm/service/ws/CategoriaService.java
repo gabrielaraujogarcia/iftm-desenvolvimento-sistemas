@@ -1,4 +1,4 @@
-package br.edu.iftm.service;
+package br.edu.iftm.service.ws;
 
 import javax.inject.Inject;
 import javax.jws.WebMethod;
@@ -16,25 +16,25 @@ public class CategoriaService implements ICategoriaService {
 	
 	@Override
 	@WebMethod
-	public void salvar(@WebParam Categoria categoria) {
+	public void salvar(@WebParam(name="categoria") Categoria categoria) {
 		categoriaDao.salvar(categoria);
 	}
 	
 	@Override
 	@WebMethod
-	public void atualizar(@WebParam Categoria categoria) {
+	public void atualizar(@WebParam(name="categoria") Categoria categoria) {
 		categoriaDao.atualizar(categoria);
 	}
 	
 	@Override
 	@WebMethod
-	public void excluir(@WebParam Categoria categoria) {
+	public void excluir(@WebParam(name="categoria") Categoria categoria) {
 		categoriaDao.excluir(categoria);
 	}
 	
 	@Override
 	@WebMethod
-	public void buscar(@WebParam Categoria categoria) {
+	public void buscar(@WebParam(name="categoria") Categoria categoria) {
 		categoriaDao.buscar(categoria);
 	}
 }

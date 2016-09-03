@@ -1,4 +1,4 @@
-package br.edu.iftm.service;
+package br.edu.iftm.service.ws;
 
 import br.edu.iftm.domain.Categoria;
 

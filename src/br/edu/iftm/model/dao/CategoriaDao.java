@@ -2,6 +2,7 @@ package br.edu.iftm.model.dao;
 
 import java.util.List;
 
+import javax.enterprise.inject.Model;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
@@ -9,6 +10,7 @@ import javax.transaction.Transactional;
 
 import br.edu.iftm.domain.Categoria;
 
+@Model
 public class CategoriaDao implements ICategoriaDao {
 	
 	@PersistenceContext(unitName="SistemaEcommercePU")

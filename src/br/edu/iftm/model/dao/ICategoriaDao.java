@@ -2,8 +2,6 @@ package br.edu.iftm.model.dao;
 
 import java.util.List;
 
-import javax.transaction.Transactional;
-
 import br.edu.iftm.domain.Categoria;
 
 public interface ICategoriaDao {
